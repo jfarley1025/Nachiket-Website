@@ -1,0 +1,39 @@
+<div id="header">
+  <div id="float-container">
+    <a href = "index.php"><div class="header-item" id = "logo-container">
+      <img src="./resources/icons/Nachiket Logo (English).png" alt="" id="logo-image">
+    </div></a>
+    <div class="header-item" id = "menu">
+      <a href = "about.php"><div class="menu-item"><p class="menu-text">About Us</p></div></a>
+      <a href="services.php"><div class="menu-item" href="#volunteer"><p class="menu-text">Our Work</p></div></a>
+      <a href="gallery.php"><div class="menu-item"><p class="menu-text">Gallery</p></div></a>
+      <a href="blog.php"><div class="menu-item"><p class="menu-text">Blog</p></div></a>
+      <a href="donate.php" onclick="donationLink();"><div class="menu-item"><p class="menu-text">Donate</p></div></a>
+    </div>
+    <div class="header-item" id = "dropdown-icon-container">
+      <div id="nav-icon" onclick="navToggle(this); showDropdown();">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </div>
+  </div>
+  <nav id="menu-dropdown">
+    <li>
+      <ul><a href = "about.php"><div class="menu-item"><p class="menu-text">About Us</p></div></a></ul>
+      <ul><a href="services.php"><div class="menu-item"><p class="menu-text">Our Work</p></div></a></ul>
+      <ul><a href="gallery.php"><div class="menu-item"><p class="menu-text">Gallery</p></div></a></ul>
+      <ul><a href="blog.php"><div class="menu-item"><p class="menu-text">Blog</p></div></a></ul>
+      <ul><a href="donate.php" onclick="donationLink();"><div class="menu-item"><p class="menu-text">Donate</p></div></a></ul>
+    </li>
+  </nav>
+</div>
+
+<script>
+  var menuItem=document.getElementById("float-container").getElementsByClassName("menu-item");
+  for (i=0; i< menuItem.length; i++){
+    if(window.location.pathname.split("/").pop() == menuItem[i].parentElement.href.split("/").pop()){
+      menuItem[i].classList.add("current");
+    }
+  }
+</script>

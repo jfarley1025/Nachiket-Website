@@ -1,0 +1,259 @@
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-shrink: 2;
+}
+
+#aboutImage {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+#about-title {
+  color: white;
+  font-size: min(12vw, 80px);
+  margin-top: 500px;
+  position: absolute;
+  bottom: 0px;
+  font-weight: bolder;
+  width: min(80%, 1200px);
+}
+
+#about-title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  bottom:100px;
+  width: 100%;
+  z-index: 998;
+  height: 100px;
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(32,32,32,1));
+}
+
+#image-container {
+  width: 100%;
+  min-height: 250px;
+  height: min(30vw, 40vh);
+  max-height: 350px;
+  margin-top: 108px;
+  margin-bottom: -0px;
+}
+
+#mapContainer {
+  width: 35vw;
+  min-width: 30%;
+  max-width: 500px;
+}
+
+#geography-text-container {
+  width: 40vw;
+  min-width: 50%;
+  max-width: 650px;
+}
+
+#founder-image-container {
+  width: min(min(400px,30vw),80vh);
+  height: auto;
+  margin-right: 20px;
+}
+
+#map {
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 1200px){
+  #geographyContainer {
+    flex-direction: column;
+    outline-color: green;
+    min-width: min(80%, 1200px) !important;
+    /*outline-style: solid;*/
+  }
+  #mapContainer {
+    align-self: center;
+    min-width: 100% !important;
+    align-self: center;
+  }
+  #geography-text-container {
+    width: ;
+    min-width: 100%;
+  }
+  #map {
+    height: min(50vh,40vw);
+    min-height: 300px;
+  }
+}
+
+.services-image{
+    width: 250%;
+    position: relative;
+    top:0px;
+}
+
+.services-text{
+  /*padding: 20px;*/
+  color: white;
+  margin:20px;
+  /*height: max(min(calc(400px - 15vw),250px),210px);*/
+  height: max-content;
+}
+
+.services-content{
+  background: #4B4B4B;
+  z-index: 999999;
+  height: min-content;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  padding-right: max(10%,calc((100vw - 1200px)/2));
+}
+
+.reversed {
+  flex-direction: row-reverse;
+  padding-left: max(10%,calc((100vw - 1200px)/2));
+  padding-right: 0;
+}
+
+.staff-container {
+  height: max(min(calc(465px - 15vw),335px),250px);
+}
+
+.reversed .services-image {
+  position:relative;
+  right:0px;
+}
+
+.testimony-container {
+  background: white;
+  width: 80%;
+  max-width: min(64%, 960px);
+  height: max-content;
+  margin: auto;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: auto;
+}
+
+.serif .quote{
+  font-family:  adobe-garamond-pro !important;
+  font-size: max(min(27px, 2vw), 20px);
+  line-height: max(min(35px, 2.6vw), 19px);
+}
+
+.serif .quote-author{
+  font-family:  adobe-garamond-pro !important;
+  font-size: max(min(20px, 1.5vw), 14px);
+  margin-top: max(min(10px, 0.75vw), 5.5px);
+}
+
+.testimony-image {
+  width: 100%;
+}
+
+.testimony-slideshow {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: min(1200px, 80%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.about-item {
+  width: calc((80% - 60px)/2);
+  min-width:280px;
+  height: min(calc(600px - 10vw),max-content);
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.15);
+  margin: 15px;
+}
+
+
+@media only screen and (max-width: 1200px){
+  .about-item{
+  }
+}
+
+.about-items-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-shrink: 2;
+  width: min(max-content,auto);
+  justify-content: center;
+}
+
+.about-item-image-container {
+}
+
+.about-item-text{
+  padding: 20px;
+  padding-top: 10px;
+}
+
+.about-item-text .content-title{
+  margin-bottom:0px;
+  padding-bottom:0px;
+}
+
+#staff-images{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.name-background {
+  background-image: url("../../resources/images/About/Nachiket.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.name-container {
+  width: 50%;
+  height: min-content;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50px;
+  padding: 40px;
+}
+
+.name-container-top {
+  width: 50%;
+  height: 75px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50px 50px 0px 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.name-container-bottom {
+  width: 50%;
+  height: min-content;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 0px 0px 50px 50px;
+  padding-top: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 80px
+  position: relative;
+  top: 25px;
+}
+
+.centered-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: inherit;
+}
