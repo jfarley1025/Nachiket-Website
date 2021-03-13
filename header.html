@@ -1,14 +1,15 @@
+<!DOCTYPE html>
 <div id="header">
   <div id="float-container">
-    <a href = "index.php"><div class="header-item" id = "logo-container">
-      <img src="./resources/icons/Nachiket Logo (English).png" alt="" id="logo-image">
+    <a href = "/" title="Home"><div class="header-item" id = "logo-container">
+      <img src="resources/icons/Nachiket_Logo--English.png" alt="Nachiket logo" id="logo-image">
     </div></a>
     <div class="header-item" id = "menu">
-      <a href = "about.php"><div class="menu-item"><p class="menu-text">About Us</p></div></a>
-      <a href="services.php"><div class="menu-item" href="#volunteer"><p class="menu-text">Our Work</p></div></a>
-      <a href="gallery.php"><div class="menu-item"><p class="menu-text">Gallery</p></div></a>
-      <a href="blog.php"><div class="menu-item"><p class="menu-text">Blog</p></div></a>
-      <a href="donate.php" onclick="donationLink();"><div class="menu-item"><p class="menu-text">Donate</p></div></a>
+      <a href = "about"><div class="menu-item"><p class="menu-text">About Us</p></div></a>
+      <a href="services"><div class="menu-item"><p class="menu-text">Our Work</p></div></a>
+      <a href="gallery"><div class="menu-item"><p class="menu-text">Gallery</p></div></a>
+      <a href="blog"><div class="menu-item"><p class="menu-text">Blog</p></div></a>
+      <a href="donate" onclick="donationLink();"><div class="menu-item"><p class="menu-text">Donate</p></div></a>
     </div>
     <div class="header-item" id = "dropdown-icon-container">
       <div id="nav-icon" onclick="navToggle(this); showDropdown();">
@@ -19,13 +20,13 @@
     </div>
   </div>
   <nav id="menu-dropdown">
-    <li>
-      <ul><a href = "about.php"><div class="menu-item"><p class="menu-text">About Us</p></div></a></ul>
-      <ul><a href="services.php"><div class="menu-item"><p class="menu-text">Our Work</p></div></a></ul>
-      <ul><a href="gallery.php"><div class="menu-item"><p class="menu-text">Gallery</p></div></a></ul>
-      <ul><a href="blog.php"><div class="menu-item"><p class="menu-text">Blog</p></div></a></ul>
-      <ul><a href="donate.php" onclick="donationLink();"><div class="menu-item"><p class="menu-text">Donate</p></div></a></ul>
-    </li>
+    <ul>
+      <li><a href = "about"><div class="menu-item"><p class="menu-text">About Us</p></div></a></li>
+      <li><a href="services"><div class="menu-item"><p class="menu-text">Our Work</p></div></a></li>
+      <li><a href="gallery"><div class="menu-item"><p class="menu-text">Gallery</p></div></a></li>
+      <li><a href="blog"><div class="menu-item"><p class="menu-text">Blog</p></div></a></li>
+      <li><a href="donate" onclick="donationLink();"><div class="menu-item"><p class="menu-text">Donate</p></div></a></li>
+    </ul>
   </nav>
 </div>
 

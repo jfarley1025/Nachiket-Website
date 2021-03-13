@@ -1,0 +1,7 @@
+# nachiketchildrenslibraries.org/robots.txt
+# Tell Google not to crawl certain resources
+User-agent: googlebot
+Disallow: /Blogs/
+Disallow: /resources/
+Disallow: header.html
+Disallow: footer.html

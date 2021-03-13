@@ -11,6 +11,15 @@ const servicesImages = document.getElementsByClassName('services-image');
 const servicesTexts = document.getElementsByClassName('services-text');
 const servicesContents = document.getElementsByClassName('services-content');
 
+const browserAlert = "Your current web browser is not fully compatible with our website, please switch to a recent version of Chrome, Edge, Safari, Firefox, etc. for a better website experience."
+
+const testElem = document.createElement('div');
+if (testElem.style.flex !== undefined && testElem.style.grid !== undefined) {
+  console.log("All tests pass");
+} else {
+  alert(browserAlert);
+}
+
 if(window.location.toString().lastIndexOf("services")!=-1){
   slideIndex=0;
 }else{
@@ -25,6 +34,7 @@ window.onresize = function() {
     arrangeShowcase();
   }
 };
+
 
 function shrinkHeader() {
   if (window.pageYOffset > 50 && dropdownIcon == 0) {
@@ -44,7 +54,8 @@ function showDropdown() {
     document.getElementById("logo-container").style.height="110px";
     setTimeout(function() {
       document.querySelector('#menu-dropdown').classList.remove('closed');
-      document.querySelector('#menu-dropdown').classList.add('opened');},50);
+      document.querySelector('#menu-dropdown').classList.add('opened');
+		},50);
   }else {
     document.querySelector('#menu-dropdown').classList.remove('opened');
     document.querySelector('#menu-dropdown').classList.add('closed');
@@ -70,7 +81,7 @@ if(document.getElementsByClassName("work-display-container")[0]!=null){
     if(paused>5){
       paused=0;
     }
-  },500);
+  },800);
 }
 
 displayArrows();
@@ -185,17 +196,4 @@ function switchMenu(){
 
 function navToggle(x) {
   x.classList.toggle("change");
-}
-
-function initServicesContainers(){
-  var i;
-
-  for(i=0;i<servicesImages.length;i++){
-    servicesImages[i].style.height = (servicesTexts[i].offsetHeight+40).toString()+"px";
-  }
-}
-if(servicesImages.length!=0){
-  setInterval (function(){
-    initServicesContainers();
-  },100)
 }

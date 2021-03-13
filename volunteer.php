@@ -1,21 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
   <head>
-    <link href="./resources/css/index.css" type="text/css" rel="stylesheet"></link>
-    <link href="./resources/css/about.css" type="text/css" rel="stylesheet"></link>
+    <link href="resources/css/index.css" type="text/css" rel="stylesheet">
+    <link href="resources/css/about.css" type="text/css" rel="stylesheet">
     <title>Nachiket Children's Libraries | Volunteer</title>
-    <link rel="icon" href=".\resources\icons\flavicon.png">
+    <link rel="icon" href="resources/icons/flavicon.png">
+    <meta name="description" content=">Volunteer at Nachiket Children's Libraries to help disadvantaged children in India discover the joy of learning.">
+    <link rel=”canonical” href=”https://nachiketchildrenslibraries.org/volunteer” />
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
   </head>
 
   <?php require "header.html"?>
 
   <div id="image-container">
-    <img id="aboutImage" src="resources/images/Banners/DSCN1591.JPG" style="object-position: top; max-height: 350px;">
+    <img id="aboutImage" src="resources/images/Banners/DSCN1591.JPG" style="object-position: top; max-height: 350px;" alt="Nachiket founder Asha Pawagi with readers and parents">
     <div id="about-title-container">
-      <div id="about-title">
+      <h1 id="about-title">
         Volunteer
-      </div>
+      </h1>
     </div>
   </div>
 
@@ -61,13 +64,13 @@
       </div>
 
     <div class="donate-image-container">
-      <img class="donate-image"src="resources\images\Blog\DSCN1536.JPG" alt="" style="width: 100%; object-fit: contain; min-height: 100%;">
+      <img class="donate-image" src="resources/images/Blog/DSCN1536.JPG" style="width: 100%; object-fit: contain; min-height: 100%;" alt="A volunteer at Nachiket">
     </div>
     </div>
   </div>
 
     <?php require "footer.html"?>
 
-    <script src="./resources/js/index.js"></script>
+    <script src="resources/js/index.js"></script>
   </body>
 </html>

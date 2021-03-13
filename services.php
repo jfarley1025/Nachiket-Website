@@ -1,25 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
   <head>
-    <link href="./resources/css/index.css" type="text/css" rel="stylesheet"></link>
-    <link href="./resources/css/about.css" type="text/css" rel="stylesheet"></link>
-    <link href="./resources/css/services.css" type="text/css" rel="stylesheet"></link>
-    <title>Nachiket Children's Libraries | About</title>
-    <link rel="icon" href=".\resources\icons\flavicon.png">
+    <link href="resources/css/index.css" type="text/css" rel="stylesheet">
+    <link href="resources/css/about.css" type="text/css" rel="stylesheet">
+    <link href="resources/css/services.css" type="text/css" rel="stylesheet">
+    <title>Nachiket Children's Libraries | Our Work</title>
+    <link rel="icon" href="resources/icons/flavicon.png">
+    <meta name="description" content=">Learn more about the work done at Nachiket, a nonprofit dedicated to getting books in the hands of disadvantaged children in India.">
+    <link rel=”canonical” href=”https://nachiketchildrenslibraries.org/services” />
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
   </head>
 <body>
 
   <?php require "header.html"?>
 
-  <div id="slideshow-container">
+  <div id="slideshow-container" style="min-width: max-content;">
     <div id="services-slideshow-container">
       <div class="slide-arrow">
-        <img onclick= "changeSlide('b');" src="./resources/icons/left-arrow.jpg" style="width: inherit;">
+        <img onclick= "changeSlide('b');" src="resources/icons/left-arrow.jpg" style="width: inherit;" alt="left-arrow">
       </div>
       <div class="services-slide-container">
-        <div class="slide fade" style="max-width: calc(max(25vw, 70vh)/2*3); display: block;">
-          <img class="slide-image" src= "./resources/images/Organized/Libraries/Images/IMG_0286.JPG">
+        <div class="slide fade" style=" display: block;">
+          <img class="slide-image" src= "resources/images/Services/AmbikaNagarAnaghaGroup.JPG" style="object-position: top;" alt="Staff and readers at Nachiket's Ambika Nagar Anagha branch">
           <div class="slide-footer">
             <div class="slide-footer-header">
               Establishing a network of free services
@@ -35,8 +38,8 @@
           </div>
         </div>
 
-        <div class="slide fade" style="max-width: calc(max(25vw, 70vh)/2*3);">
-          <img class="slide-image" src= "./resources/images/Organized/Readers/Images/IMG_0344.JPG">
+        <div class="slide fade">
+          <img class="slide-image" src= "resources/images/Organized/Readers/Images/IMG_0344.JPG" alt="Nachiket founder Asha Pawagi talks to students">
           <div class="slide-footer">
             <div class="slide-footer-header">
               Supporting educational goals
@@ -50,8 +53,8 @@
           </div>
         </div>
 
-        <div class="slide fade" style="max-width: calc(max(25vw, 70vh)/2*3);">
-          <img class="slide-image" src= "./resources/images/Organized/Libraries/Images/DSCN1573.JPG" style="object-position:bottom;">
+        <div class="slide fade">
+          <img class="slide-image" src= "resources/images/Organized/Libraries/Images/DSCN1573.JPG" style="object-position:bottom;" alt="A young reader at Nachiket Children's Libraries">
           <div class="slide-footer">
             <div class="slide-footer-header">
               Developing young minds
@@ -65,8 +68,8 @@
           </div>
         </div>
 
-        <div class="slide fade" style="max-width: calc(max(25vw, 70vh)/2*3);">
-          <img class="slide-image" src= "./resources\images\Organized\Readers\Images\IMG_0311.JPG" style="object-position: top;">
+        <div class="slide fade">
+          <img class="slide-image" src= "resources/images/Organized/Readers/Images/IMG_0311.JPG" style="object-position: top;" alt="A girl with a book at Nachiket">
           <div class="slide-footer">
             <div class="slide-footer-header">
               Fostering a love of reading
@@ -79,8 +82,8 @@
           </div>
         </div>
 
-        <div class="slide fade" style="max-width: calc(max(25vw, 70vh)/2*3);">
-          <img class="slide-image" src= "./resources/images/Organized/Artwork/Images/Scan20_Complete.JPG" style="object-fit: cover;">
+        <div class="slide fade">
+          <img class="slide-image" src= "resources/images/Organized/Artwork/Images/Scan20_Complete.jpg" style="object-fit: cover;" alt="Artwork done by readers at Nachiket Children's Libraries showing environmental stewardship">
           <div class="slide-footer">
             <div class="slide-footer-header">
               Encouraging cultural and social awareness
@@ -97,24 +100,24 @@
 
       </div>
       <div class="slide-arrow">
-        <img onclick= "changeSlide('f');" src="./resources/icons/right-arrow.jpg" style="width: inherit;">
+        <img onclick= "changeSlide('f');" src="resources/icons/right-arrow.jpg" style="width: inherit;" alt="right-arrow">
       </div>
     </div>
   </div>
 
   <div class="content-container">
     <div class="content">
-      <h2 class="content-title" style="border-color: #F99832">Why Libraries?</h2><br>
+      <h1 style="color: black;" class="content-title" style="border-color: #F99832">Why Libraries?</h1><br>
 
       <p>Access to a library is intertwined with the quality of education, one
-        of the key issues of 21st century. Educational inequality underlies most
-        socio-economic-cultural problems including gender equality. An
+        of the key issues of the 21st century. Educational inequality underlies most
+        socio-economic-cultural problems including gender inequality. An
         encouraging literacy environment is crucial for every child's future,
         and access to a library is as important as universal primary education.</p><br>
 
       <p>Reading is a foundational skill. “Right to Education”, guaranteed by
         the Indian Constitution, could only be achieved by accepting and
-        instilling the right of every child to become a reader.</p></br>
+        instilling the right of every child to become a reader.</p><br>
 
       <p>An encouraging literary environment is crucial for a child’s future.
         Only with easy access to interesting and engaging reading material, will
@@ -126,7 +129,7 @@
   <div class="content-container" style="  height: min-content;padding-bottom:0;">
     <div class="services-content">
       <div class="services-image">
-          <img style= "width: 100%; height: 100%; object-fit: cover;" src= "./resources/images/Organized/Libraries/Images/IMG_0309.JPG">
+          <img style= "width: 100%; height: 100%; object-fit: cover;" src= "resources/images/Services/IMG_0309.JPG" alt="Readers at Nachiket">
       </div>
       <div class="services-text">
         <h2 class="content-title" style="width:220px;border-color: #428A19">A Culture of Reading</h2><br>
@@ -146,7 +149,7 @@
       <div class="services-items-container">
         <div class="services-item">
           <div class="services-item-image-container">
-            <img src=".\resources\images\Organized\Readers\Images\DSCN1373.JPG" style="width:100%;height:auto;">
+            <img src="resources/images/Services/DSCN1373.JPG" style="width:100%;height:auto;" alt="Readers at Nachiket">
           </div>
           <div class="services-item-text">
             <h2 class="content-title" style="width: 170px;border-color: lightgrey">Improved Literacy</h2>
@@ -158,19 +161,19 @@
         </div>
         <div class="services-item">
           <div class="services-item-image-container">
-            <img src=".\resources\images\Organized\Staff\Images\Story4.JPG" style="width:100%;height:auto;">
+            <img src="resources/images/About/Staff/story4.JPG" style="width:100%;height:auto;" alt="A Nachiket staff member reading to children">
           </div>
           <div class="services-item-text">
             <h2 class="content-title" style="border-color: lightgrey">Employment Opportunities</h2>
             <p>Nachiket employs full time staff from the local communities.
               Our local staff and volunteers are indispensable.
-              To learn more about our wonderful employees click <a href="about.php#Staff">here</a>.
+              To learn more about our wonderful employees click <a href="about#Staff" style="text-decoration: underline;" title="About Us | Our Staff">here</a>.
             </p>
           </div>
         </div>
         <div class="services-item">
           <div class="services-item-image-container">
-            <img src=".\resources\images\Organized\Community\Images\218.JPG" style="width:100%;height:auto;">
+            <img src="resources/images/Organized/Community/Images/218.JPG" style="width:100%;height:auto;" alt="Students in Amravati District">
           </div>
 
           <div class="services-item-text">
@@ -190,10 +193,10 @@
   <div class="content-container" style="  height: max-content;padding-bottom:0;">
     <div class="services-content reversed">
       <div class="services-image">
-          <img style= "width: 100%; height: 100%; object-fit: cover;" src= "./resources/images/Slides/DSCF0868.JPG">
+          <img style= "width: 100%; height: 100%; object-fit: cover;" src= "resources/images/Services/DSCF0868.JPG" alt="Children receiving new reading materials at Nachiket">
       </div>
       <div class="services-text">
-        <h2 class="content-title" style="width:220px;border-color: #F99832"><i>"Wachan Udbodhan"</i></h2><br>
+      <h2 class="content-title" style="width:220px;border-color: #F99832"><i>"Wachan Udbodhan"</i></h2><br>
         <p>Users of our libraries are taking the 'Idea of Reading' ('Wachan
           Udbodham') to smaller villages. Grade 9 readers have started holding
           parents/readers assemblies to raise awareness
@@ -207,17 +210,17 @@
     </div>
   </div>
 
-    <a name="make-a-difference"></a>
+    <a id="make-a-difference"></a>
   <div class="content-container">
     <div class="content" style="padding-bottom: 10px;">
       <h2 class="content-title" style="width:200px;border-color:#428A19;">Make a Difference</h2><br>
       <div class="difference-container">
         <div class="difference-item">
           <div class="difference-icon-container">
-            <img src=".\resources\icons\book.png" class="difference-icon">
+            <img src="resources/icons/book.png" class="difference-icon" alt="Book icon">
           </div>
           <div class="difference-price">
-            <h1>$1</h1>
+            <p>$1</p>
           </div>
           <div class="difference-text">
             Buys a book
@@ -225,10 +228,10 @@
         </div>
         <div class="difference-item">
           <div class="difference-icon-container">
-            <img src=".\resources\icons\magnifying-glass.png" class="difference-icon">
+            <img src="resources/icons/magnifying-glass.png" class="difference-icon" alt="Search icon">
           </div>
           <div class="difference-price">
-            <h1>$50</h1>
+            <p>$50</p>
           </div>
           <div class="difference-text">
             Buys reference material
@@ -236,10 +239,10 @@
         </div>
         <div class="difference-item">
           <div class="difference-icon-container">
-            <img src=".\resources\icons\mic.png" class="difference-icon">
+            <img src="resources/icons/mic.png" class="difference-icon" alt="Microphone icon">
           </div>
           <div class="difference-price">
-            <h1>$100</h1>
+            <p>$100</p>
           </div>
           <div class="difference-text">
             Starts a new storytelling group
@@ -247,10 +250,10 @@
         </div>
         <div class="difference-item">
           <div class="difference-icon-container">
-            <img src=".\resources\icons\library.png" class="difference-icon">
+            <img src="resources/icons/library.png" class="difference-icon" alt="Library icon">
           </div>
           <div class="difference-price">
-            <h1>$1000</h1>
+            <p>$1000</p>
           </div>
           <div class="difference-text">
             Opens a new branch
@@ -271,12 +274,12 @@
     </div>
     <div class="support-items-buttons-container">
       <div class="support-button previous">
-        <img onclick= "changeSupport('b');" src="./resources/icons/support-left-arrow.png" style="width: inherit;margin:auto;">
+        <img onclick= "changeSupport('b');" src="resources/icons/support-left-arrow.png" style="width: inherit;margin:auto;" alt="left-arrow">
       </div>
       <div class="support-items-display">
         <div class="support-item left">
           <div class="support-item-image-container">
-            <img class="support-item-image" src=".\resources\images\Organized\Activities\Images\shibirphoto1(4).JPG">
+            <img class="support-item-image" src="resources/images/Organized/Activities/Images/shibirphoto1(4).JPG" alt="Artwork at Nachiket">
           </div>
           <div class="support-item-title-container fixed">
             <div class="support-item-title" style="">
@@ -301,7 +304,7 @@
 
         <div class="support-item center">
           <div class="support-item-image-container">
-            <img class="support-item-image" src=".\resources\images\Organized\Artwork\Images\Library.JPG">
+            <img class="support-item-image" src="resources/images/Services/Library.jpg" alt="Children's drawing of a library at Nachiket">
           </div>
           <div class="support-item-title-container fixed">
             <div class="support-item-title" style="">
@@ -326,7 +329,7 @@
 
         <div class="support-item right">
           <div class="support-item-image-container">
-            <img class="support-item-image" src=".\resources\images\Organized\Libraries\Images\IMG-20180416-WA0006.jpg" style="object-position: center;">
+            <img class="support-item-image" src="resources/images/Organized/Libraries/Images/IMG-20180416-WA0006.jpg" style="object-position: center;" alt="Reading materials at Nachiket">
           </div>
           <div class="support-item-title-container fixed">
             <div class="support-item-title" style="">
@@ -352,7 +355,7 @@
 
         <div class="support-item">
           <div class="support-item-image-container">
-            <img class="support-item-image" src=".\resources\images\Organized\Libraries\Images\JD1.JPG">
+            <img class="support-item-image" src="resources/images/Organized/Libraries/Images/JD1.JPG" alt="Nachiket library decorated with children's artwork">
           </div>
           <div class="support-item-title-container fixed">
             <div class="support-item-title">
@@ -377,7 +380,7 @@
 
         <div class="support-item">
           <div class="support-item-image-container">
-            <img class="support-item-image" src=".\resources\images\Organized\Readers\Images\IMG_1179.JPG">
+            <img class="support-item-image" src="resources/images/Services/IMG_1179.JPG" alt="Nachiket community members with computer">
           </div>
           <div class="support-item-title-container fixed">
             <div class="support-item-title">
@@ -402,7 +405,7 @@
 
         <div class="support-item">
           <div class="support-item-image-container">
-            <img class="support-item-image" src=".\resources\images\Organized\Staff\Images\AmbikaNagarAnagha&areader.JPG">
+            <img class="support-item-image" src="resources/images/Organized/Staff/Images/AmbikaNagarAnagha&areader.jpg" alt="Nachiket staff member Ambika Nagar Anagha">
           </div>
           <div class="support-item-title-container fixed">
             <div class="support-item-title">
@@ -428,7 +431,7 @@
       </div>
 
       <div class="support-button next">
-        <img onclick= "changeSupport('f');" src="./resources/icons/support-right-arrow.png" style="width: inherit;margin:auto;">
+        <img onclick= "changeSupport('f');" src="resources/icons/support-right-arrow.png" style="width: inherit;margin:auto;" alt="right-arrow">
       </div>
     </div>
   </div>
@@ -438,7 +441,7 @@
       <div id="vid-slideshow">
         <div class="video-container">
           <video id="vid-player" width="560" height="315" controls>
-          </video
+          </video>
         </div>
       </div>
       <?php
@@ -498,7 +501,7 @@
     <div class="content" style="padding-top:0px;">
       <div class="quote-container">
         <div class="quote-mark-container">
-          <img src=".\resources\icons\open-quote.png" style="width:100%;height:100%;object-fit:contain;object-position:top;">
+          <img src="resources/icons/open-quote.png" style="width:100%;height:100%;object-fit:contain;object-position:top;" alt="">
         </div>
         <div class="quote-plus-author">
           <div class="quote">
@@ -509,15 +512,15 @@
           </div>
         </div>
         <div class="quote-mark-container">
-          <img src=".\resources\icons\close-quote.png" style="width:100%;height:100%;object-fit:contain;object-position:bottom;">
+          <img src="resources/icons/close-quote.png" style="width:100%;height:100%;object-fit:contain;object-position:bottom;" alt="">
         </div>
       </div>
     </div>
   </div>
 
-    <?php require "footer.html"?>
+    <?php require "footer.html";?>
 
-  <script src="./resources/js/index.js"></script>
-  <script src="./resources/js/services.js"></script>
+  <script src="resources/js/index.js"></script>
+  <script src="resources/js/services.js"></script>
 </body>
 </html>

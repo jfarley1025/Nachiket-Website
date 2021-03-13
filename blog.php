@@ -1,24 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <link href="./resources/css/index.css" type="text/css" rel="stylesheet"></link>
-  <link href="./resources/css/about.css" type="text/css" rel="stylesheet"></link>
-  <link href="./resources/css/blog.css" type="text/css" rel="stylesheet"></link>
+  <link href="resources/css/index.css" type="text/css" rel="stylesheet">
+  <link href="resources/css/about.css" type="text/css" rel="stylesheet">
+  <link href="resources/css/blog.css" type="text/css" rel="stylesheet">
   <title>Nachiket Children's Libraries | Blog</title>
-  <link rel="icon" href=".\resources\icons\flavicon.png">
+  <link rel="icon" href="resources/icons/flavicon.png">
+  <meta name="description" content=">Learn more about what's going on at Nachiket, a nonprofit dedicated to getting books in the hands of disadvantaged children in India.">
+  <link rel=”canonical” href=”https://nachiketchildrenslibraries.org/blog” />
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
 </head>
 
-<a name="top"></a>
+<a id="top"></a>
 
 <?php require "header.html"?>
 
 <div id="image-container">
-  <img id="aboutImage" src=".\resources\images\Organized\Readers\Images\IMG_2910-banner.JPG" style="object-position: center top; object-fit: cover;">
+  <img id="aboutImage" src="resources/images/Organized/Readers/Images/IMG_2910-banner.jpg" style="object-position: center top; object-fit: cover;" alt="Nachiket readers">
   <div id="about-title-container">
-    <div id="about-title">
+    <h1 id="about-title">
       The Blog
-    </div>
+    </h1>
   </div>
 </div>
 <?php
@@ -28,6 +31,8 @@ $blog_list = array();
 $blog_list_unsorted = array();
 $year_list = array();
 $month_list = array();
+$num_months = 0;
+$num_years = 0;
 if (is_dir($dir)){
 
   if ($dhy = opendir($dir)){
@@ -36,6 +41,7 @@ if (is_dir($dir)){
         $year_dir = $dir . "/" . $year;
         if(is_dir($year_dir)){
           array_push($year_list, $year);
+          $num_years +=1;
           $month_list_year = array();
           $blog_list_year = array();
           if ($dhm = opendir($year_dir)){
@@ -46,6 +52,7 @@ if (is_dir($dir)){
                 if(is_dir($month_dir)){
                   array_push($month_list_year, $month);
                   if($dh = opendir($month_dir)){
+                    $num_months+=1;
                     $blog_list_month = array();
                     while (($blog = readdir($dh)) !== false){
                       if($blog != '' && $blog != '.' && $blog != '..'){
@@ -93,63 +100,61 @@ function compare_months($a, $b) {
   <div class="content">
     <div class="blogs-and-index-container">
       <div class="blogs-container">
-        <?php
-        function compare_blogs($a, $b) {
-          $BlogA = explode('/', $a);
-          $BlogA = array_pop($BlogA);
-          $BlogB = explode('/', $b);
-          $BlogB = array_pop($BlogB);
-          echo '<script language="javascript">';
-//echo "alert('$BlogA')";
-echo '</script>';
-          if ($BlogA == $BlogB) {
-              return 0;
-          }
-          return ($BlogA < $BlogB) ? +1 : -1;
-        }
-        $year_counter = 0;
-        unset($blog);
-        usort($blog_list_unsorted, "compare_blogs");
-        foreach($blog_list_unsorted as &$blog){
+        <div id="index-container">
+          <h2 class="index-title">BLOG ARCHIVE</h2>
+          <ul>
+            <?php
+            $year_counter = 0;
+            $caret_counter = 0;
+            foreach($year_list as &$blog_year){
+              $month_counter = 0;
+              ?>
+              <li><a href="javascript: void(0);" onclick="toggleCaret(<?php echo $caret_counter; $caret_counter++;?>);" class="toggle"><span class="caret">►</span>
+                <?php echo $blog_year ?></a><ul class="collapsed-list" id='<?php echo $blog_year ?>'><?php
+                foreach($month_list[$year_counter] as &$blog_month){
+                  ?><li><a href="javascript: void(0);" onclick="toggleCaret(<?php echo $caret_counter; $caret_counter++; ?>);" class="toggle"><span class="caret">►</span>
+                    <?php echo $blog_month ?></a><ul class="collapsed-list" id='<?php echo $blog_month ?>'><?php
+                    unset($blog_path);
+                    foreach($blog_list[$year_counter][$month_counter] as $blog_path){
+                      $blog_title = substr($blog_path, strpos($blog_path,"--")+2);
+                      $blog_title = strstr($blog_title, ".html", true);
+                      ?>
+                      <li><a onclick="setTimeout(function(){window.scrollBy(0, -100);}, 0);" href="#<?php echo str_replace(' ', '', $blog_title) ?>"><?php
+                      echo $blog_title ?></a></li>
+                      <?php
+                    }
+                    unset($blog_path);
+                    $month_counter++;
+                    ?></ul></li><?php
+
+                  }
+                  unset($blog_month);
+                  $year_counter++;
+                  ?></ul></li><?php
+                }
+                unset($blog_year);
+                ?>
+              </ul>
+            </div>
+
+            <?php
+            function compare_blogs($a, $b) {
+              $BlogA = explode('/', $a);
+              $BlogA = array_pop($BlogA);
+              $BlogB = explode('/', $b);
+              $BlogB = array_pop($BlogB);
+              if ($BlogA == $BlogB) {
+                return 0;
+              }
+              return ($BlogA < $BlogB) ? +1 : -1;
+            }
+            $year_counter = 0;
+            unset($blog);
+            usort($blog_list_unsorted, "compare_blogs");
+            foreach($blog_list_unsorted as &$blog){
               require $blog;
             }
-        ?>
-      </div>
-      <div id="index-container">
-        <h2 class="index-title">BLOG ARCHIVE</h2>
-        <ul>
-          <?php
-          $year_counter = 0;
-          $caret_counter = 0;
-          foreach($year_list as &$blog_year){
-            $month_counter = 0;
             ?>
-            <li><a href="javascript: void(0);" onclick="toggleCaret(<?php echo $caret_counter; $caret_counter++;?>);" class="toggle"><span class="caret">►</span>
-              <?php echo $blog_year ?></a><ul class="collapsed-list" id='<?php echo $blog_year ?>'><?php
-              foreach($month_list[$year_counter] as &$blog_month){
-                ?><li><a href="javascript: void(0);" onclick="toggleCaret(<?php echo $caret_counter; $caret_counter++; ?>);" class="toggle"><span class="caret">►</span>
-                  <?php echo $blog_month ?></a><ul class="collapsed-list" id='<?php echo $blog_month ?>'><?php
-                  unset($blog_path);
-                  foreach($blog_list[$year_counter][$month_counter] as $blog_path){
-                    $blog_title = substr($blog_path, strpos($blog_path,"--")+2);
-                    $blog_title = strstr($blog_title, ".html", true);
-                    ?>
-                    <li><a onclick="setTimeout(function(){window.scrollBy(0, -100);}, 0);"href="#<?php echo $blog_title ?>"><?php
-                    echo $blog_title ?></a></li>
-                    <?php
-                  }
-                  unset($blog_path);
-                  $month_counter++;
-                  ?></ul></li><?php
-
-                }
-                unset($blog_month);
-                $year_counter++;
-                ?></ul></li><?php
-              }
-              unset($blog_year);
-              ?>
-            </ul>
           </div>
         </div>
       </div>
@@ -159,7 +164,7 @@ echo '</script>';
 
 
 
-    <div class="content-container">
+    <div class="content-container" style="background-color: #f8f8ff;">
       <div class="content">
         <a href="#top" style="color: #2845AB; text-decoration: underline;">Return to top of page</a>
       </div>
@@ -167,7 +172,7 @@ echo '</script>';
 
     <?php require "footer.html"?>
 
-    <script src="./resources/js/index.js"></script>
-    <script src="./resources/js/blog.js"></script>
+    <script src="resources/js/index.js"></script>
+    <script src="resources/js/blog.js"></script>
   </body>
   </html>

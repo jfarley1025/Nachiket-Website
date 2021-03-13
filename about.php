@@ -1,20 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
   <head>
-    <link href="./resources/css/index.css" type="text/css" rel="stylesheet"></link>
-    <link href="./resources/css/about.css" type="text/css" rel="stylesheet"></link>
-    <link href="./resources/css/gallery.css" type="text/css" rel="stylesheet"></link>
-    <link href="./resources/css/services.css" type="text/css" rel="stylesheet"></link>
+    <link href="resources/css/index.css" type="text/css" rel="stylesheet">
+    <link href="resources/css/about.css" type="text/css" rel="stylesheet">
+    <link href="resources/css/gallery.css" type="text/css" rel="stylesheet">
+    <link href="resources/css/services.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/ltk0inr.css">
     <title>Nachiket Children's Libraries | About</title>
-    <link rel="icon" href=".\resources\icons\flavicon.png">
+    <link rel="icon" href="resources/icons/flavicon.png">
+    <meta name="description" content=">Learn more about Nachiket Children's
+    Libraries, a nonprofit dedicated to getting books in the hands of disadvantaged children in India.">
+    <link rel=”canonical” href=”https://nachiketchildrenslibraries.org/about” />
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
   </head>
 
-  <div id="modal">
+  <div id="modal" onclick="closeModal();">
     <span id="close" style="z-index: 999;" onclick="closeModal();">&times;</span>
     <div id="modal-content-caption">
-      <img id="modal-content">
+      <img id="modal-content" src="resources/icons/empty.png" alt="">
       <div id="caption"></div>
     </div>
   </div>
@@ -22,11 +26,11 @@
   <?php require "header.html"?>
 
   <div id="image-container">
-    <img id="aboutImage" src="./resources/images/About/DSCN0616.JPG">
+    <img id="aboutImage" src="resources/images/About/DSCN0616.JPG" alt="Nachiket mothers reading with their children">
     <div id="about-title-container">
-      <div id="about-title">
+      <h1 id="about-title">
         About Us
-      </div>
+      </h1>
     </div>
   </div>
 
@@ -43,9 +47,10 @@
         disadvantaged children to confront and conquer immense
         inequalities in educational and other opportunities.<p><br>
 
-      <p>21st century education system demands independent learning capacity
-        and right of every child to globally meaningful education could only be
-        achieved by instilling right of every child to become a reader.</p>
+      <p>Education in the 21st century requires that children be able to learn
+        independently. Therefore the right of every child to globally meaningful
+        education can only be achieved by giving every child the right to become
+        a reader. </p>
     </div>
   </div>
 
@@ -54,7 +59,7 @@
       <div class="name-container-top"></div>
         <div class="centered-title" style="position: absolute; top: 60px; left: 50%; transform: translate(-50%,0%);">
           <div class="circle-container">
-            <img src="resources/icons/circle.png">
+            <img src="resources/icons/circle.png" alt="">
           </div>
           <div class="circle-title-container"  style="width: 150%;">
             <h2 class="circle-title">What's in a Name?</h2>
@@ -63,10 +68,11 @@
 
       <div class="name-container-bottom">
 
-        <p style="padding-bottom: 40px;padding-top: 15px;">Nachiket stans for inquisitiveness, courage to raise questions, and
+        <p style="padding-bottom: 40px;padding-top: 15px;">
+        Nachiket stands for inquisitiveness, courage to raise questions, and
         willingness to endure any hardships to acquire knowledge. According to
         the Upanishadic tale, Nachiket fearlessly goes all the way to the
-        Kingdom of Death an confronts Yama, the godd of wisdom. Readding will
+        Kingdom of Death and confronts Yama, the godd of wisdom. Reading will
         awaken the Nachiket hidden in every child.</p>
       </div>
     </div>
@@ -76,14 +82,14 @@
     <div class="content">
       <h2 class="content-title" style="border-color: var(--green)">Our History</h2><br>
 
-        <p>Nachiket was established in 2004 to improve the acces to books for
+        <p>Nachiket was established in 2004 to improve the access to books for
           children in Amravati. </p><br>
 
         <p>Nachiket now has 20 branches in the rural areas surrounding the city
           of Amravati. A self sufficient, community-oriented method has been
           adopted for running these village libraries using donated or rented
           spaces. A current stock of 27,000 books rotated through the libraries,
-          serve over 5,000 children.</p><br>
+          serves over 5,000 children.</p><br>
 
         <p>To start a new library in a rural area, we usually rent a room that
           is part of a main dwelling, located centrally in a village. Each
@@ -99,7 +105,7 @@
     <div class="content" style="padding-top:20px;">
       <div class="quote-container resizeable">
         <div class="quote-mark-container">
-          <img src=".\resources\icons\open-quote.png" style="width:100%;height:100%;object-fit:contain;object-position:top;">
+          <img src="resources/icons/open-quote.png" style="width:100%;height:100%;object-fit:contain;object-position:top;" alt="">
         </div>
         <div class="quote-plus-author serif">
           <div class="quote">
@@ -112,7 +118,7 @@
         </div>
       </div>
       <div class="quote-mark-container">
-        <img src=".\resources\icons\close-quote.png" style="width:100%;height:100%;object-fit:contain;object-position:bottom;">
+        <img src="resources/icons/close-quote.png" style="width:100%;height:100%;object-fit:contain;object-position:bottom;" alt="">
       </div>
     </div>
   </div>
@@ -122,10 +128,10 @@
       <div class="about-items-container">
         <div class="about-item">
           <div class="about-item-image-container">
-            <img src=".\resources\images\Organized\Libraries\Images\DSCN0644.JPG" style="width:100%;height:100%;object-fit:cover">
+            <img src="resources/images/Organized/Libraries/Images/DSCN0644.JPG" style="width:100%;height:100%;object-fit:cover" alt="Children reading in a Nachiket library">
           </div>
           <div class="about-item-text">
-            <h2 class="content-title"style="width: 170px;border-color: lightgrey">Room to Read</h2><br>
+            <h2 class="content-title" style="width: 170px;border-color: lightgrey">Room to Read</h2><br>
             <p>This room provides a warm, safe, and inviting place where the
               pleasures of reading are pressure free. The room has beautiful
               display and attractive furniture. Children find ample space to
@@ -137,16 +143,16 @@
         </div>
         <div class="about-item">
           <div class="about-item-image-container">
-            <img src=".\resources\images\Organized\Readers\Images\IMG_0322.JPG" style="width:100%;height:100%;object-fit:cover">
+            <img src="resources/images/Organized/Readers/Images/IMG_0322.JPG" style="width:100%;height:100%;object-fit:cover" alt="A mother reading to her baby at Nachiket">
           </div>
           <div class="about-item-text">
             <h2 class="content-title" style="border-color: lightgrey; width: 200px;">Early Years Reading Program</h2><br>
             <p id="Staff"> This program helps poor children in rural Amravati who otherwise
               would arrive in grade one without developing proper learning
               skills. The aim of this program is to ensure that a child starts
-              using library before she or he goes to school. Nachiket Children's
-              Libraries are assisting parents in getting children ready to read
-              and learn before entering elementary school.
+              using library services before she or he goes to school. Nachiket
+              Children's Libraries are assisting parents in getting children ready
+              to read and learn before entering elementary school.
             </p>
           </div>
         </div>
@@ -164,7 +170,7 @@
         make books and learning fun for the children. Sulochana from
         Shirajgaon, has even written and directed three plays for her
         library.</p><br>
-        <div id="staff-images">
+        <div class="staff-images">
           <?php
            // Image extensions
            $image_extensions = array("png","jpg","jpeg","gif", "JPG");
@@ -185,7 +191,7 @@
                   in_array($image_ext,$image_extensions)){
             ?>
                 <div class="gallery-image-container">
-                  <img id= '<?php echo $file?>' onclick="openAboutModal('<?php echo $file; ?>','resources/images/About/Staff/');" src='<?php echo $image_path; ?>' class='<?php echo "gallery-image " . "about-staff-gallery-image"?>'>
+                  <img id= '<?php echo $file?>' onclick="openAboutModal('<?php echo $file; ?>','resources/images/About/Staff/');" src='<?php echo $image_path; ?>' class='<?php echo "gallery-image " . "about-staff-gallery-image"?>' alt="Nachiket staff member">
                 </div>
               <?php
               $count++;
@@ -198,33 +204,23 @@
         }?>
         </div>
     </div>
-<!--
-    <div class="services-content">
-      <div class="services-image">
-          <img style= "width: 100%; height: 100%; object-fit: cover; object-position: center top;" src= ".\resources\images\Organized\Staff\Images\IMG_0896.JPG">
-      </div>
-      <div class="services-text">
-
-      </div>
-    </div>-->
   </div>
 
   <div class="content-container" style="background: #F6F5F2;padding-top:0px;">
     <div class="content" style="min-width: 700px;">
       <div class="testimony-container">
         <div class="testimony-image">
-          <img src=".\resources\images\Organized\Staff\Images\TESTIMONY_PREVIEW.png" style="width: 100%; height: 100%; object-fit: cover;">
+          <img src="resources/images/About/20210310_190209.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="Nachiket staff member">
         </div>
           <div class="quote-plus-author serif">
             <div class="quote">
-              In Shirajgaon, I have a dream job. I know which books will hold
-              children's interest and spur them to read more. I see the tremendous
-              improvement in their vocabulary, writing skill, and in public
-              speaking. Neighbouring villages would also like to have a library
-              just like ours.
+              I have a dream job. I know which books will hold children's interest
+              and spur them to read more. I see the tremendous improvement in
+              their vocabulary, writing skill, and in public speaking. Neighbouring
+              villages would also like to have a library just like ours.
             </div>
             <div class="quote-author">
-              &ndash;   Sulochana (Nachiket Staff Member)
+              &ndash;   Nachiket Staff Member
             </div>
           </div>
       </div>
@@ -257,13 +253,13 @@
               of extreme poverty. As much as 38% of the population is illiterate
               with a shocking 24% gender gap in literacy rates. Nachiket seeks to
               address some of the issues these communities face by opening new
-              branches in exclusively regions and delivering high quality
-              educational materials to close the opportunity gap between urban 
+              branches in exclusively tribal regions and delivering high quality
+              educational materials to close the opportunity gap between urban
               and tribal children.
             </p><br>
         </div>
           <div id="mapContainer">
-            <iframe id="map"style="width: 100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6891310.640554045!2d74.86015879648062!3d18.79948582579348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd6a49d2d298dc9%3A0xc5c29847723e4bc4!2sAmravati%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sca!4v1593820313831!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6891310.640554045!2d74.86015879648062!3d18.79948582579348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd6a49d2d298dc9%3A0xc5c29847723e4bc4!2sAmravati%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sca!4v1593820313831!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" title="Map of Amravati District"></iframe>
           </div>
       </div>
     </div>
@@ -272,7 +268,7 @@
       <div class="content" style="padding-top:20px;">
         <div class="quote-container resizeable">
           <div class="quote-mark-container">
-            <img src=".\resources\icons\open-quote.png" style="width:100%;height:100%;object-fit:contain;object-position:top;">
+            <img src="resources/icons/open-quote.png" style="width:100%;height:100%;object-fit:contain;object-position:top;" alt="">
           </div>
           <div class="quote-plus-author serif">
             <div class="quote">
@@ -284,7 +280,7 @@
           </div>
         </div>
         <div class="quote-mark-container">
-          <img src=".\resources\icons\close-quote.png" style="width:100%;height:100%;object-fit:contain;object-position:bottom;">
+          <img src="resources/icons/close-quote.png" style="width:100%;height:100%;object-fit:contain;object-position:bottom;" alt="">
         </div>
       </div>
     </div>
@@ -310,7 +306,7 @@
           titles include <i>Global Warming</i>, <i>Mumbai Terror Attack</i>,
           <i>A Famous Museum in Ahamadnagar</i>, and <i>Types of Snakes</i>.
         </p><br>
-        <div id="staff-images">
+        <div class="staff-images">
           <?php
            // Image extensions
            $image_extensions = array("png","jpg","jpeg","gif", "JPG");
@@ -331,7 +327,7 @@
                   in_array($image_ext,$image_extensions)){
             ?>
                 <div class="gallery-image-container">
-                  <img id= '<?php echo $file?>' onclick="openAboutModal('<?php echo $file; ?>', 'resources/images/About/Activities/');" src='<?php echo $image_path; ?>' class='<?php echo "gallery-image " . "about-activities-gallery-image"?>'>
+                  <img id= '<?php echo $file?>' onclick="openAboutModal('<?php echo $file; ?>', 'resources/images/About/Activities/');" src='<?php echo $image_path; ?>' class='<?php echo "gallery-image " . "about-activities-gallery-image"?>' alt="Activities at Nachiket">
                 </div>
               <?php
               $count++;
@@ -350,7 +346,7 @@
       <div class="content" style="min-width: 700px;">
         <div class="testimony-container">
           <div class="testimony-image">
-            <img src=".\resources\images\About\ph068.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+            <img src="resources/images/About/ph068.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="Ravi, a member of the Nachiket staff">
           </div>
             <div class="quote-plus-author serif">
               <div class="quote">
@@ -370,10 +366,9 @@
       <div class="content">
         <h2 class="content-title" style="border-color: var(--orange)">Our Founder</h2><br>
         <div class="about-container">
-        <div id="founder-image-container">
-          <img src="./resources/images/About/Founder.JPG" style="display:block; object-fit:contain; width: inherit; height: inherit; border-radius: 10%">
-        </div>
-          <div class="founder-text-container" style="width: 55%">
+          <div id="founder-text-container">
+            <img src="resources/images/About/Founder.JPG" id="founder-image" alt="Asha Pawagi, Nachiket founder">
+            <br>
             <p>Asha Pawagi grew up in Amravati, Maharashtra and immigrated to
               Toronto, Canada in 1970 with her husband and two small children.
               The day she arrived in Canada she became a member of the Toronto
@@ -386,19 +381,23 @@
               cystic fibrosis, heart disease, and cancer.
             </p><br>
 
-            <p><i>A wonderful, fair, and just world of tomorrow has to exist
+            <div class="founder-paragraph" style="left: 0px; wrap: none;"><p style="white-space: normal;"><i>A wonderful, fair, and just world of tomorrow has to exist
               first in a child's imagination. I believe that access to a
               library ought to be the right of every child born anywhere in
-              the world.</i></p><br>
+              the world.</i></p><br></div>
 
-            <p><i>Reading promotes independent thinking, self-respect, and
-              confidence even under the direst conditions. Once you know who
-              you are, you can face and conquer any kind of inequality.
-              Nothing can stop you. Reading fosters the critical thinking
-              skills needed to achieve this goal. We are making a difference
-              one library at a time.</i></p><br>
+              <div class="founder-paragraph">
+                <p><i>Reading promotes independent thinking, self-respect, and
+                  confidence even under the direst conditions. Once you know who
+                  you are, you can face and conquer any kind of inequality.
+                  Nothing can stop you. Reading fosters the critical thinking
+                  skills needed to achieve this goal. We are making a difference
+                  one library at a time.</i></p><br>
 
-            <p>-Asha Pawagi</p>
+                <p>-Asha Pawagi</p>
+
+              </div>
+
           </div>
         </div>
       </div>
@@ -408,7 +407,7 @@
     <div class="content" style="padding-top:20px;">
       <div class="quote-container resizeable">
         <div class="quote-mark-container">
-          <img src=".\resources\icons\open-quote.png" style="width:100%;height:100%;object-fit:contain;object-position:top;">
+          <img src="resources/icons/open-quote.png" style="width:100%;height:100%;object-fit:contain;object-position:top;" alt="">
         </div>
         <div class="quote-plus-author serif">
           <div class="quote">
@@ -423,14 +422,14 @@
         </div>
       </div>
       <div class="quote-mark-container">
-        <img src=".\resources\icons\close-quote.png" style="width:100%;height:100%;object-fit:contain;object-position:bottom;">
+        <img src="resources/icons/close-quote.png" style="width:100%;height:100%;object-fit:contain;object-position:bottom;" alt="">
       </div>
     </div>
   </div>
 
-    <?php require "footer.html"?>
+    <?php require "footer.html";?>
 
-    <script src="./resources/js/index.js"></script>
-    <script src="./resources/js/gallery.js"></script>
+    <script src="resources/js/index.js"></script>
+    <script src="resources/js/gallery.js"></script>
   </body>
 </html>
